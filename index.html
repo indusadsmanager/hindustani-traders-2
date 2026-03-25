@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="gu">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>👑VIP TIPS👑</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ગુજરાતી ટ્રેડર</title>
 
-<!-- FONT AWESOME -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- GOOGLE FONT -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
-
-<!-- META PIXEL (UNCHANGED) -->
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s){
 if(f.fbq)return;
@@ -25,250 +22,237 @@ t.src=v;
 s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
 }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','850885574577933');
+
+fbq('init','1782983282489250');
+fbq('track','PageView');
 </script>
 
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=850885574577933&ev=PageView&noscript=1"/>
-</noscript>
-
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-
 body{
+  margin:0;
   font-family:'Poppins',sans-serif;
-  background:linear-gradient(135deg,#1b1f3a,#0c1026 60%,#050714);
+  background:radial-gradient(circle at top,#0f1226,#02040f 80%);
   color:#fff;
 }
 
-/* HERO */
-.hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:40px 20px;
+/* CONTAINER */
+.container{
+  max-width:420px;
+  margin:auto;
+  padding:30px 20px;
 }
 
 /* CARD */
-.glass{
-  max-width:430px;
-  width:100%;
-  background:linear-gradient(180deg,rgba(20,24,55,.95),rgba(10,14,35,.95));
-  border-radius:32px;
-  padding:42px 28px 48px;
-  box-shadow:
-    0 30px 80px rgba(0,0,0,.85),
-    0 0 70px rgba(255,215,0,.15);
+.card{
+  background:linear-gradient(180deg,#0c1028,#050816);
+  border-radius:30px;
+  padding:40px 25px;
   text-align:center;
-  border:1px solid rgba(255,215,0,.25);
+  box-shadow:
+    0 30px 100px rgba(0,0,0,0.9),
+    0 0 80px rgba(255,215,0,0.2);
+  border:1px solid rgba(255,215,0,0.2);
+  animation:fadeIn 1s ease;
 }
 
-/* LOGO */
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+/* LOGO FIXED */
 .logo{
   width:120px;
   height:120px;
   border-radius:50%;
   object-fit:cover;
-  border:4px solid #fff;
+  display:block;
+  margin:0 auto 20px auto;
+  border:3px solid rgba(255,255,255,0.9);
   box-shadow:
-    0 0 40px rgba(255,215,0,.9),
-    0 0 80px rgba(255,200,0,.4);
-  margin-bottom:20px;
+    0 0 25px rgba(255,215,0,0.9),
+    0 0 60px rgba(255,215,0,0.5),
+    0 0 120px rgba(255,215,0,0.3),
+    inset 0 0 20px rgba(255,255,255,0.2);
 }
 
-/* NAME */
-.name{
+/* TEXT */
+h1{
   font-size:28px;
-  font-weight:900;
-  letter-spacing:1px;
-  margin-bottom:6px;
+  font-weight:800;
 }
-
-.tagline{
+.tag{
   font-size:14px;
-  color:#d5d9ff;
-  margin-bottom:25px;
+  color:#cfd3ff;
+  margin-bottom:10px;
 }
-
-/* STATS */
-.stats{
-  font-size:14px;
-  margin-bottom:25px;
+.trust{
+  font-size:13px;
   color:#ffd700;
-  font-weight:600;
+  margin-bottom:15px;
 }
 
-/* CTA BUTTON */
+/* TRUST BOX */
+.trustbox{
+  background:rgba(255,255,255,0.05);
+  border-radius:15px;
+  padding:15px;
+  margin:15px 0;
+  font-size:13px;
+  text-align:left;
+}
+.trustbox div{
+  margin:6px 0;
+}
+
+/* CTA */
 .cta{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  padding:20px;
-  border-radius:70px;
-  background:linear-gradient(180deg,#ffd700,#ffb700);
-  font-size:18px;
-  font-weight:900;
-  color:#111;
+  display:block;
+  padding:18px;
+  border-radius:60px;
+  background:linear-gradient(180deg,#ffd700,#ffb300);
+  color:#000;
+  font-weight:800;
   text-decoration:none;
+  margin:25px 0;
   box-shadow:
-    0 18px 50px rgba(255,200,0,.6),
-    inset 0 3px 8px rgba(255,255,255,.5);
-  margin-bottom:35px;
-  transition:.25s ease;
+    0 20px 60px rgba(255,215,0,0.6),
+    inset 0 2px 6px rgba(255,255,255,0.5);
+  transition:.3s;
 }
-
 .cta:hover{
-  transform:translateY(-3px) scale(1.03);
-  box-shadow:
-    0 25px 70px rgba(255,215,0,.9);
+  transform:scale(1.07);
 }
 
 /* FEATURES */
 .features{
-  display:grid;
-  gap:18px;
-}
-
-.feature{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  padding:16px;
-  border-radius:18px;
-  background:rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.06);
-  backdrop-filter:blur(10px);
-}
-
-.feature i{
-  font-size:20px;
-  color:#ffd700;
-}
-
-.feature span{
-  font-size:14px;
   text-align:left;
-  color:#f0f0f0;
+  margin-top:20px;
 }
-
-/* RATING */
-.rating{
-  margin-top:30px;
+.features div{
+  margin:12px 0;
+  font-size:14px;
+}
+.features i{
   color:#ffd700;
-  font-size:18px;
+  margin-right:8px;
 }
 
-.rating-text{
+/* TESTIMONIAL */
+.testimonial{
+  margin-top:20px;
   font-size:13px;
-  color:#ccc;
-  margin-top:6px;
+  color:#ddd;
+  font-style:italic;
+}
+
+/* LIVE */
+#liveActivity{
+  margin-top:15px;
+  font-size:13px;
+  color:#00ffcc;
 }
 
 /* DISCLAIMER */
 .disclaimer{
   margin-top:20px;
   font-size:11px;
-  color:#888;
-  line-height:1.5;
-}
-
-/* FOOTER */
-.footer{
-  margin-top:25px;
-  font-size:12px;
-  color:#aaa;
+  color:#777;
 }
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-  <div class="glass">
+<div class="container">
+  <div class="card">
 
-    <img class="logo"
-      src="https://uploads.onecompiler.io/447v8k97f/44agms2de/WhatsApp%20Image%202025-12-29%20at%2018.24.42.jpeg"
-      alt="Gujaratixtrader">
+    <!-- LOGO (FIXED + FALLBACK) -->
+    <img src="https://res.cloudinary.com/dqhbtoh8u/image/upload/v1774449836/WhatsApp_Image_2025-12-29_at_18.24.42_mklank.jpg"
+         class="logo"
+         alt="logo"
+         onerror="this.src='https://i.imgur.com/2DhmtJ4.png';">
 
-    <div class="name">GujratixTrader</div>
-    <div class="tagline">Private • High Accuracy • Risk Managed Trades</div>
+    <h1>ગુજરાતી ટ્રેડર</h1>
+    <div class="tag">Options Learning • Smart Trading</div>
 
-    <div class="stats">20,000+ Active Traders • Premium Education Community</div>
+    <div class="trust">✔ 100% Learning Based ✔ No Fake Promises ✔ Trusted by Traders</div>
+
+    <!-- TRUST -->
+    <div class="trustbox">
+      <div>✔ 25000+ Traders Connected</div>
+      <div>✔ Daily Market Analysis</div>
+      <div>✔ Beginner Friendly Content</div>
+      <div>✔ Risk Management Focus</div>
+    </div>
 
     <!-- CTA -->
-    <a href="https://t.me/+mIYBoo8jEuBkMTM9"
-       target="_blank"
-       class="cta subscribe-btn">
-       <i class="fab fa-telegram-plane"></i> JOIN VIP TELEGRAM
+    <a href="https://t.me/+DUMUrNuIsWQ0ZjQ1" target="_blank" class="cta" id="joinBtn">
+      <i class="fa-brands fa-telegram"></i> JOIN FREE TELEGRAM
     </a>
 
+    <!-- FEATURES -->
     <div class="features">
-
-      <div class="feature">
-        <i class="fa-solid fa-chart-line"></i>
-        <span>Nifty • BankNifty • Options Strategy Analysis</span>
-      </div>
-
-      <div class="feature">
-        <i class="fa-solid fa-bullseye"></i>
-        <span>Precise Entry • Target • Stoploss System</span>
-      </div>
-
-      <div class="feature">
-        <i class="fa-solid fa-shield"></i>
-        <span>Strict Risk Management & Capital Protection</span>
-      </div>
-
-      <div class="feature">
-        <i class="fa-solid fa-gem"></i>
-        <span>No Hype • Only Skill & Clarity</span>
-      </div>
-
+      <div><i class="fa-solid fa-chart-line"></i> Nifty • BankNifty Analysis</div>
+      <div><i class="fa-solid fa-bullseye"></i> Entry • Target • Stoploss</div>
+      <div><i class="fa-solid fa-shield-halved"></i> Risk Management System</div>
+      <div><i class="fa-solid fa-book-open"></i> Beginner to Advanced Learning</div>
     </div>
 
-    <div class="rating">
-      ★★★★★
-      <div class="rating-text">Rated 5.0 by our learning community</div>
+    <!-- TESTIMONIAL -->
+    <div class="testimonial">
+      ⭐ "Best Gujarati trading community for learning discipline & strategy"
     </div>
+
+    <div id="liveActivity">🟢 Loading activity...</div>
 
     <div class="disclaimer">
-      Educational purpose only. No tips or guarantees.<br>
-      Market participation involves risk.
-    </div>
-
-    <div class="footer">
-      © 2026 Gujarati Trader • All Rights Reserved
+      Educational purpose only. Trading involves risk.
     </div>
 
   </div>
-</section>
+</div>
 
-<!-- TRACKING SCRIPT (UNCHANGED) -->
+<!-- ONE TIME TRACKING -->
 <script>
-const PAGEVIEW_KEY = "gt_pageview_tracked";
-const SUBSCRIBE_KEY = "gt_subscribe_tracked";
+const LEAD_KEY = "telegram_lead_tracked";
+const btn = document.getElementById('joinBtn');
 
-if (!localStorage.getItem(PAGEVIEW_KEY)) {
-    fbq('track', 'PageView');
-    localStorage.setItem(PAGEVIEW_KEY, "true");
+btn.addEventListener('click', function () {
+
+    if (localStorage.getItem(LEAD_KEY) === "true") return;
+
+    // disable spam click UX
+    btn.style.pointerEvents = "none";
+    btn.innerText = "Joining...";
+
+    fbq('track', 'Lead');
+    fbq('trackCustom', 'TelegramJoin', {
+        source: 'Landing Page',
+        platform: 'Telegram'
+    });
+
+    localStorage.setItem(LEAD_KEY, "true");
+});
+</script>
+
+<!-- LIVE ACTIVITY -->
+<script>
+const names = [
+"Amit Patel","Rahul Sharma","Vikram Singh","Rohit Mehta","Karan Gupta",
+"Suresh Yadav","Deepak Kumar","Manish Patel","Arjun Singh","Nitin Sharma"
+];
+
+function showActivity(){
+    const randomName = names[Math.floor(Math.random()*names.length)];
+    const time = Math.floor(Math.random()*5)+1;
+    document.getElementById("liveActivity").innerHTML =
+    "🟢 " + randomName + " joined " + time + " min ago";
 }
 
-document.querySelector(".subscribe-btn").addEventListener("click", function () {
-    if (!localStorage.getItem(SUBSCRIBE_KEY)) {
-        fbq('track', 'Lead');
-        fbq('trackCustom', 'TelegramSubscribe', {
-            source: 'Landing Page',
-            platform: 'Telegram'
-        });
-        localStorage.setItem(SUBSCRIBE_KEY, "true");
-    }
-});
+setInterval(showActivity,3000);
+showActivity();
 </script>
 
 </body>
 </html>
-
-
